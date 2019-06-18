@@ -1,0 +1,18 @@
+.Menu {
+    padding: 20px 40px;
+    width: 300px;
+    height: 100vh;
+    background: #38383a;
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.Menu-subitems {
+    margin-left: 20px;
+}
+
+.Menu p {
+    line-height: 40px;
+}

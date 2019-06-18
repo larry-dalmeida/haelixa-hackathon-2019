@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Card from '../Card'
+import Tracker from '../Tracker' 
 
 class Product extends Component {
     render() {
@@ -7,6 +9,8 @@ class Product extends Component {
         return (
             <div>
                 <h1>{name}</h1>
+                <Card name={'Farm 1'} value={80} />
+                <Tracker />
             </div>
         );
     }

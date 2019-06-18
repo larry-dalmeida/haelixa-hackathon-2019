@@ -2,9 +2,8 @@ import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import Products from './components/Products';
+import Menu from './components/Menu'
 import Product from './components/Product';
-import Card from './components/Card'
-import Tracker from './components/Tracker' 
 import './App.css';
 
 const products = [
@@ -20,16 +19,15 @@ function App() {
       <header className="App-header">
         Haelixa Analytics
       </header>
-      <Router>
-          <Switch>
-            <Route exact path="/products/:id" render={routerProps => <Product {...routerProps} products={products} />} />
-            <Route exact path="/products" render={routerProps => <Products {...routerProps} products={products} />} />
-            <Route path="/" render={routerProps => <Products {...routerProps} products={products} />} />
-          </Switch>
-      </Router>
+      <Menu />
       <div className="Container">
-        <Card name={'Farm 1'} value={80} />
-        <Tracker />
+        <Router>
+            <Switch>
+              <Route exact path="/products/:id" render={routerProps => <Product {...routerProps} products={products} />} />
+              <Route exact path="/products" render={routerProps => <Products {...routerProps} products={products} />} />
+              <Route path="/" render={routerProps => <Products {...routerProps} products={products} />} />
+            </Switch>
+        </Router>
       </div>
     </div>
   );
