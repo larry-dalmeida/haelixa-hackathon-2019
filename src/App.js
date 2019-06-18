@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import './App.css';
 
 import Products from './components/Products';
 import Product from './components/Product';
+import Card from './components/Card'
+import './App.css';
 
 const products = [
   { id: 1, name: 'Cool product 1', url: '/products/1' },
@@ -25,6 +26,9 @@ function App() {
             <Route path="/" render={Products} />
           </Switch>
       </Router>
+      <div className="Container">
+        <Card />
+      </div>
     </div>
   );
 }
