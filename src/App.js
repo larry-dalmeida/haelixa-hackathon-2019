@@ -10,7 +10,9 @@ function App() {
           Adidas
         </p>
       </header>
-        <Card title={'I am a card'} />
+      <div className="Container">
+        <Card />
+      </div>
     </div>
   );
 }
