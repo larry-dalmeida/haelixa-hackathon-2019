@@ -1,1 +1,3 @@
-.Tracker {}
+.Tracker-container {
+  display: flex;
+}

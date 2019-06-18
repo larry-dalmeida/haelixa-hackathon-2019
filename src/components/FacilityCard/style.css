@@ -1,0 +1,40 @@
+.FacilityCard {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 5px;
+  background: grey;
+}
+
+.FacilityCard.successfull {
+  background: green;
+}
+
+.FacilityCard.fail {
+  background: #d40707;
+}
+
+.FacilityCard-placeholder {
+  height: 200px;
+  margin-bottom: 20px;
+  background: #e0dfdf;
+  border-radius: 10px;
+}
+
+.FacilityCard-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.FacilityCard-button {
+  background: #2da7f5;
+  border: none;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
