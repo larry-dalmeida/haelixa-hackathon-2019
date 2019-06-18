@@ -30,13 +30,13 @@
 }
 
 .ok-match {
-  background: #fffd96;
+  background: #ffeb3b;
 }
 
 .bad-match {
-  background: #ff96a5;
+  background: #ef5350;
 }
 
 .good-match {
-  background: #adff96;
+  background: #8bc34a;
 }

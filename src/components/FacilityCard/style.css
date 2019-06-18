@@ -8,11 +8,11 @@
 }
 
 .FacilityCard.successfull {
-  background: green;
+  background: #8bc34a;
 }
 
 .FacilityCard.fail {
-  background: #d40707;
+  background: #ef5350;
 }
 
 .FacilityCard-placeholder {
