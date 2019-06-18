@@ -13,5 +13,25 @@
 .Container {
   display: flex;
   padding: 30px;
-  margin-left: 300px;
+  margin-left: 250px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Menu {
+    display: none;
+  }
+  .Container {
+    display: flex;
+    padding: 30px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .Tracker-container {
+    flex-direction: column;
+  }
+  .Modal {
+    margin-top: 20%;
+  }
 }
