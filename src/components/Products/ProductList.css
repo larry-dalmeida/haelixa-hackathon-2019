@@ -1,0 +1,21 @@
+.product-list table {
+  width: 100%;
+}
+
+.product-list td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.product-list img {
+  margin-right: 20px;
+}
+
+.product-list {
+  width: 100%;
+}
+
+.product-list a {
+  color: black;
+  text-decoration: none;
+}
