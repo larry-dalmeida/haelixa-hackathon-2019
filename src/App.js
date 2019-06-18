@@ -1,17 +1,11 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import Products from './components/Products';
+import ProductList from './components/Products';
 import Menu from './components/Menu'
 import Product from './components/Product';
 import './App.css';
-
-const products = [
-  { id: 1, name: 'Cool product 1', url: '/products/1' },
-  { id: 2, name: 'Cool product 2', url: '/products/2' },
-  { id: 3, name: 'Cool product 3', url: '/products/3' },
-  { id: 4, name: 'Cool product 4', url: '/products/4' },
-];
+import data from './data/data.json';
 
 function App() {
   return (
@@ -23,9 +17,9 @@ function App() {
       <div className="Container">
         <Router>
             <Switch>
-              <Route exact path="/products/:id" render={routerProps => <Product {...routerProps} products={products} />} />
-              <Route exact path="/products" render={routerProps => <Products {...routerProps} products={products} />} />
-              <Route path="/" render={routerProps => <Products {...routerProps} products={products} />} />
+              <Route exact path="/products/:id" render={routerProps => <Product {...routerProps} products={data} />} />
+              <Route exact path="/products" render={routerProps => <ProductList {...routerProps} products={data} />} />
+              <Route path="/" render={routerProps => <ProductList {...routerProps} products={data} />} />
             </Switch>
         </Router>
       </div>
