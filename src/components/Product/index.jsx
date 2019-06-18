@@ -18,7 +18,7 @@ class Product extends Component {
             <div className="Product-container">
                 <h1>{item.article}</h1>
                 <Tracker item={item} onItemClick={() => { this.setState({ isModalVisible: !this.state.isModalVisible })}}/>
-                {this.state.isModalVisible ? <Modal /> : null}
+                {this.state.isModalVisible ? <Modal onClose={() => this.setState({ isModalVisible: false })} /> : null}
             </div>
         );
     }

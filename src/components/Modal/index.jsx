@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css';
+import image from './mockup.PNG'
 
-const Modal = ({ name, status }) => {
+const Modal = ({ onClose }) => {
   return (
-    <div className="Modal-background">
+    <div className="Modal-background" onClick={onClose}>
       <div className="Modal">
-        {name}
+        <img src={image} />
       </div>
     </div>
   );

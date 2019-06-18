@@ -8,8 +8,10 @@
 }
 
 .Modal {
-  height: 70%;
-  width: 80%;
+  background-image: url("./mockup.PNG");
+  padding: 40px;
+  height: 359px;
+  width: 859px;
   background: #fff;
   margin: auto;
   margin-top: 10%;
