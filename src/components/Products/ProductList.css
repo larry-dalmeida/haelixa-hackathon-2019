@@ -19,3 +19,20 @@
   color: black;
   text-decoration: none;
 }
+
+.match {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.ok-match {
+  background: #fffd96;
+}
+
+.bad-match {
+  background: #ff96a5;
+}
+
+.good-match {
+  background: #adff96;
+}
