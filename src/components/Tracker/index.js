@@ -3,30 +3,18 @@ import Icon from '../Icon'
 import FacilityCard from '../FacilityCard'
 import './style.css';
 
-const Tracker = ({ data, onItemClick }) => {
+const Tracker = ({ item, onItemClick }) => {
+  const getStatus = (value) => value === "1" ? 'successfull' : (value === "0" ? 'fail' : null)
   return (
     <div className="Tracker">
-      {
-        /*data.map(it => {
-          return (
-            <div>
-            </div>
-          )
-        })*/
-      }
-      <Icon icon={'dna'} />
       <div className={'Tracker-container'}>
-        <FacilityCard name={'Farm'} status={'successfull'} onClick={onItemClick} />
-        <FacilityCard name={'Dying Facility'} status={'fail'} onClick={onItemClick} />
-        <FacilityCard name={'Sewing Facility'} onClick={onItemClick} />
-        <FacilityCard name={'Retail'} status={'successfull'} onClick={onItemClick} />
+        <FacilityCard name={'Farm'} status={getStatus(item.farm_test)} onClick={onItemClick} />
+        <FacilityCard name={'Dying Facility'} status={getStatus(item.facility_1_test)} onClick={onItemClick} />
+        <FacilityCard name={'Sewing Facility'} status={getStatus(item.facility_2_test)} onClick={onItemClick} />
+        <FacilityCard name={'Retail'} status={getStatus(item.facility_3_test)} onClick={onItemClick} />
       </div>
     </div>
   );
-}
-
-Tracker.defaultProps = {
-  data: []
 }
 
 export default Tracker;

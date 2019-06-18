@@ -13,12 +13,11 @@ class Product extends Component {
     }
     render() {
         const { products, match: { params } } = this.props;
-        const { article } = products.find(product => product.id === parseInt(params.id, 10));
+        const item = products.find(product => product.id === parseInt(params.id, 10));
         return (            
             <div className="Product-container">
-                <h1>{article}</h1>
-                <Card name={'Farm 1'} value={80} />
-                <Tracker onItemClick={() => { this.setState({ isModalVisible: !this.state.isModalVisible })}}/>
+                <h1>{item.article}</h1>
+                <Tracker item={item} onItemClick={() => { this.setState({ isModalVisible: !this.state.isModalVisible })}}/>
                 {this.state.isModalVisible ? <Modal /> : null}
             </div>
         );

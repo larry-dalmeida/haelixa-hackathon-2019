@@ -1,3 +1,16 @@
 .Modal-background {
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Modal {
+  height: 70%;
+  width: 80%;
+  background: #fff;
+  margin: auto;
+  margin-top: 10%;
 }

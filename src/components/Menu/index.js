@@ -18,9 +18,9 @@ const categories = [
 const Menu = ({ icon, height, width }) => {
   return (
     <div className={'Menu'}>
-      {menu.map(item => <p>{item}</p>)}
+      {menu.map(item => <p key={item}>{item}</p>)}
       <div className={'Menu-subitems'}>
-        {categories.map(item => <p>{item}</p>)}
+        {categories.map(item => <p key={item}>{item}</p>)}
       </div>
     </div>
   )
