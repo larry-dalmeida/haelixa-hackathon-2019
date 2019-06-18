@@ -1,17 +1,16 @@
 import React from 'react';
 import './style.css';
 
-const Card = ({ title, farm, percentage, }) => {
+const Card = ({ name, value }) => {
   return (
     <div className="Card">
-      {title}
       <div className="Card-info">
-        <p><span>Farm:</span>{farm}</p>
-        <p><span>Text1:</span>{farm}</p>
-        <p><span>Text2:</span>{farm}</p>
+        <p><span>Farm:</span>{name}</p>
+        <p><span>Text1:</span>{''}</p>
+        <p><span>Text2:</span>{''}</p>
       </div>
-      <div>
-        {percentage}
+      <div className="Card-value">
+        {value}
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './components/Card'
+import Tracker from './components/Tracker'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         </p>
       </header>
       <div className="Container">
-        <Card />
+        <Card name={'Farm 1'} value={80} />
+        <Tracker />
       </div>
     </div>
   );
