@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.product-list tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
 .product-list td:first-child {
   display: flex;
   align-items: center;
